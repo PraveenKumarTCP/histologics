@@ -1,0 +1,183 @@
+{
+    "headerLinks": [
+        {
+            "label": "HOME",
+            "href": "/"
+        },
+        {
+            "label": "ABOUT",
+            "href": "/about"
+        },
+        {
+            "label": "PRODUCTS",
+            "href": "/products"
+        },
+        {
+            "label": "BLOG",
+            "href": "/blog"
+        }
+    ],
+    "medicalDevices": [
+        {
+            "title": "Soft-Biopsy®",
+            "subtitle": "Single-use kylon® pad for gentle exocervical tissue / organ, targeted biopsy collection.",
+            "image": "/images/products/softbiopsy.png",
+            "bgColor": "bg-gray-400"
+        },
+        {
+            "title": "Soft-ECC®",
+            "subtitle": "Endocervical kylon® tip for endocervical curettage tissue removal prior to excision.",
+            "image": "/images/products/soft-ecc.png",
+            "bgColor": "bg-[#A8327E]"
+        },
+        {
+            "title": "Soft-ECC-S®",
+            "subtitle": "Smaller, tapered, kylon® ECC device for nulliparous os, cervix.",
+            "image": "/images/products/soft-ecc-s.png",
+            "bgColor": "bg-gray-400"
+        }
+    ],
+    "departments": [
+        {
+            "title": "Looking for the newest advances? Visit Histologics!",
+            "logo": "/images/home/histologics-1.png",
+            "link": "/advanced"
+        },
+        {
+            "title": "Looking for Cervical Dysplasia care? Visit Histologics!",
+            "logo": "/images/home/histologics-2.png",
+            "link": "/care"
+        }
+    ],
+    "testimonials": [
+        {
+            "name": "Sarah Connor",
+            "avatar": "/images/home/testi-f.webp",
+            "date": "2023-11-12",
+            "text": "The Soft-ECC is such a revolutionary product! The physician was very professional and thorough. The procedure was extremely fast. Just a few minutes to take my sample..."
+        },
+        {
+            "name": "Martha Stewart",
+            "avatar": "/images/home/testi-m.webp",
+            "date": "2023-10-05",
+            "text": "I was really pleased with the treatment by the head nurse and doctor immediately. They thoroughly and carefully explained the procedure and the aftercare..."
+        },
+        {
+            "name": "Jane Hopkins, MD",
+            "avatar": "/images/home/testi-f.webp",
+            "date": "2023-09-20",
+            "text": "Great innovations! Since incorporating these products, I've seen overall care improvements compared to standard devices. Much less patient anxiety as well..."
+        }
+    ],
+    "videos": [
+        {
+            "title": "Compassionate Colposcopy®",
+            "author": "Dr. Sarah",
+            "date": "Feb 15, 2024",
+            "image": "https://dummyimage.com/400x250/ccc/333.png&text=Video+1",
+            "description": "Discover our new compassionate colposcopy solutions..."
+        },
+        {
+            "title": "Welcome to Histologics LLC®",
+            "author": "Admin",
+            "date": "Jan 10, 2024",
+            "image": "https://dummyimage.com/400x250/ccc/333.png&text=Video+2",
+            "description": "An introduction to the history and mission of our company..."
+        },
+        {
+            "title": "How Kylon® Removes Diagnostic Tissue Safely",
+            "author": "Clinical Team",
+            "date": "Dec 05, 2023",
+            "image": "https://dummyimage.com/400x250/ccc/333.png&text=Video+3",
+            "description": "A close look at how Kylon works effectively in clinical settings..."
+        },
+        {
+            "title": "Medical Insights on Cervical Care",
+            "author": "Dr. Smith",
+            "date": "Nov 20, 2023",
+            "image": "https://dummyimage.com/400x250/ccc/333.png&text=Video+4",
+            "description": "Latest advancements in care methods using our patented technology..."
+        }
+    ],
+    "footer": {
+        "about": [
+            {
+                "label": "About Us",
+                "href": "/about"
+            },
+            {
+                "label": "History Summary",
+                "href": "/history"
+            },
+            {
+                "label": "Mission",
+                "href": "#"
+            },
+            {
+                "label": "Quality / Excellence Standard",
+                "href": "#"
+            },
+            {
+                "label": "Careers / Contractors",
+                "href": "#"
+            },
+            {
+                "label": "Patents and Trademarks",
+                "href": "#"
+            }
+        ],
+        "guidelines": [
+            {
+                "label": "Clinical Education",
+                "href": "#"
+            },
+            {
+                "label": "Clinical Instructions",
+                "href": "#"
+            },
+            {
+                "label": "Reimbursement / Billing",
+                "href": "#"
+            },
+            {
+                "label": "Certifications",
+                "href": "#"
+            },
+            {
+                "label": "Policies",
+                "href": "#"
+            }
+        ],
+        "resources": [
+            {
+                "label": "Clinical Articles",
+                "href": "#"
+            },
+            {
+                "label": "Related Links",
+                "href": "#"
+            },
+            {
+                "label": "Privacy Policy",
+                "href": "#"
+            },
+            {
+                "label": "User Terms of Service",
+                "href": "#"
+            },
+            {
+                "label": "Accessibility, Non-discrimination",
+                "href": "#"
+            },
+            {
+                "label": "CA Privacy Rights",
+                "href": "#"
+            }
+        ],
+        "contact": {
+            "phone": "(888) 754-1234",
+            "email": "info@histologics.com",
+            "address": "1000 N. West Street, Suite 1200\nWilmington, DE 19801"
+        }
+    }
+}

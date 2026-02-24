@@ -1,0 +1,38 @@
+@import "tailwindcss";
+
+@plugin "tailwindcss-animate";
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-sora), ui-sans-serif, system-ui, sans-serif;
+  --font-sora: var(--font-sora);
+}
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  /* background: var(--background); */
+  color: var(--foreground);
+  font-family: var(--font-sans);
+}
+
+p,
+.base-text {
+  font-family: var(--font-sora);
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0%;
+}
