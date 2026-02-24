@@ -38,7 +38,7 @@ export default function Videos() {
                                 <p className="text-xs text-gray-400 mb-4 text-left w-full leading-relaxed">
                                     {video.date} | Histologics Women's Health | <br className="hidden lg:block lg:mb-1" /> Histologics GX
                                 </p>
-                                <p className="text-sm text-gray-600 mb-6 text-left w-full leading-relaxed flex-grow">
+                                <p className="text-sm! text-gray-600 mb-6 text-left w-full leading-relaxed flex-grow">
                                     {video.description}
                                 </p>
                                 <div className="mt-auto w-full flex justify-center">
