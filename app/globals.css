@@ -5,8 +5,8 @@
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-sora), ui-sans-serif, system-ui, sans-serif;
-  --font-sora: var(--font-sora);
+  --font-sans: var(--font-manrope), ui-sans-serif, system-ui, sans-serif;
+  --font-manrope: var(--font-manrope);
 }
 
 :root {
@@ -29,10 +29,10 @@ body {
 
 p,
 .base-text {
-  font-family: var(--font-sora);
+  font-family: var(--font-manrope);
   font-weight: 400;
   font-style: normal;
-  font-size: 16px;
+  font-size: 17px;
   line-height: 150%;
   letter-spacing: 0%;
 }

@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
-import { Sora } from "next/font/google";
+import { Manrope } from "next/font/google";
 import "./globals.css";
 
-const sora = Sora({
-  variable: "--font-sora",
+const manrope = Manrope({
+  variable: "--font-manrope",
   subsets: ["latin"],
 });
 
@@ -12,6 +12,8 @@ export const metadata: Metadata = {
   description: "Saving Lives Worldwide with Kylon Tissue-Based Devices",
 };
 
+import { AOSInit } from "./_components/AOSInit";
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -19,7 +21,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${sora.variable} font-sans antialiased`}>
+      <body className={`${manrope.variable} font-sans antialiased`}>
+        <AOSInit />
         {children}
       </body>
     </html>

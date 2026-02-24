@@ -11,22 +11,22 @@ export default function About() {
                     <div className="w-full lg:w-1/2 flex justify-center lg:justify-start">
                         <div className="relative w-full max-w-xl mb-8 lg:mb-0">
                             {/* Purple Background offset */}
-                            <div className="absolute top-[10%] left-[15%] w-[85%] h-[100%] bg-[#A8327E] rounded-2xl z-0">
+                            <div className="absolute top-[10%] left-[15%] w-[95%] h-[100%] bg-[#A43B7F] rounded-2xl z-0">
                                 {/* The text vertically centered on the right strip */}
                                 <div className="absolute top-0 bottom-0 right-0 w-[15%] flex items-center justify-center">
-                                    <span className="text-white text-md font-bold whitespace-nowrap transform -rotate-90 tracking-widest origin-center">
+                                    <span className="text-white text-2xl font-bold whitespace-nowrap transform -rotate-90 tracking-widest origin-center">
                                         18 years of experience
                                     </span>
                                 </div>
                             </div>
 
                             {/* Image bounding box */}
-                            <div className="relative z-10 w-[85%] aspect-[4/3] rounded-2xl overflow-hidden shadow-sm bg-gray-100">
+                            <div className="relative z-10 w-[95%] aspect-[3/3] rounded-2xl overflow-hidden shadow-sm bg-gray-100">
                                 <Image
-                                    src="/abt-histologics.png"
+                                    src="/images/abt-histologics.png"
                                     alt="About Histologics"
                                     fill
-                                    className="object-cover"
+                                    className="object-cover object-right"
                                 />
                             </div>
                         </div>
@@ -34,22 +34,14 @@ export default function About() {
 
                     {/* Right Text Side */}
                     <div className="w-full lg:w-1/2 flex flex-col justify-center">
-                        <h2 className="text-2xl md:text-3xl font-normal text-[#0073CF] mb-6">
+                        <h2 className="text-2xl md:text-[27px] font-bold text-[#0073CF] mb-6">
                             About Histologics LLC
                         </h2>
                         <p className="text-gray-600 mb-6 leading-relaxed text-justify">
-                            Histologics LLC's primary objective is to advance the field of tissue sampling into the
-                            21st century. Proper tissue sampling and care during colposcopic practice and other
-                            medical settings should serve to save lives, worldwide.
+                            Histologics LLC’s primary objective is to advance the field of tissue sampling into the 21st century. Proper tissue sampling and care during colposcopic practice and other medical settings should serve to save lives, worldwide.
                         </p>
                         <p className="text-gray-600 mb-8 leading-relaxed text-justify">
-                            Histologics LLC was established in 2008 out of a dedication to women undergoing
-                            evaluation for abnormal cervical cancer screening and a need for better histologic
-                            sampling. The founders, including Ob/Gyn inventor Dr. Neal Lonky, developed
-                            Speculoscopy (PapSure ®) and Spirabrush CX® in the 1980's and early 1990's
-                            (respectively). Years of dedication to improving women's healthcare led the company
-                            to innovate a different approach to obtain tissue samples from the cervix, lower
-                            genital tract, and other epithelium.
+                            Histologics LLC was established in 2008 out of a dedication to women undergoing evaluation for abnormal cervical cancer screening and a need for better histologic sampling. The founders, including Ob/Gyn inventor Dr. Neal Lonky, developed Speculoscopy (PapSure ®) and Spirabrush CX® in the 1980's and early 1990's (respectively). Years of dedication to improving women's healthcare led the company to innovate a different approach to obtain tissue samples from the cervix, lower genital tract, and other epithelium.
                         </p>
                         <div>
                             <Button>

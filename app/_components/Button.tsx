@@ -19,10 +19,10 @@ export default function Button({
     variant = "primary",
 }: ButtonProps) {
     const baseClasses =
-        "inline-block px-6 py-2 rounded-md font-bold transition-colors uppercase text-sm text-center cursor-pointer";
+        "inline-block px-6 py-3 rounded-md font-bold transition-colors capitalize text-sm text-center cursor-pointer";
 
     const variants = {
-        primary: "bg-[#A8327E] text-white hover:bg-[#8a2765]",
+        primary: "bg-[#A43B7F] text-white hover:bg-[#8f326e]",
         secondary: "bg-[#00AEEF] text-white hover:bg-[#008fcc]",
         white: "bg-white text-gray-900 hover:bg-gray-100",
     };

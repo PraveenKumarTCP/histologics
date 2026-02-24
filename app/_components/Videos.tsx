@@ -5,44 +5,45 @@ export default function Videos() {
     return (
         <section className="py-24 bg-white">
             <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-                <div className="text-center mb-16">
-                    <h2 className="text-3xl font-light text-[#00AEEF] mb-4">
-                        Trusted by Healthcare Professionals
+                <div className="text-center mb-16" data-aos="fade-up" data-aos-duration="800">
+                    <h2 className="text-2xl md:text-[27px] font-bold text-[#0073CF] mb-6">
+                        Recent Articles & Insights
                     </h2>
-                    <p className="text-gray-600 max-w-2xl mx-auto">
-                        Watch our videos and tutorials about handling devices, clinical procedures, and daily operations.
+                    <p className="text-gray-600 max-w-3xl mx-auto text-center">
+                        Stay informed with the latest research, innovations, and best practices in gynecological care.
                     </p>
                 </div>
 
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
                     {homeData.videos.map((video, index) => (
-                        <div key={index} className="bg-white rounded-lg shadow-md border border-gray-100 overflow-hidden flex flex-col hover:shadow-xl transition-shadow duration-300">
-                            <div className="relative h-48 w-full group cursor-pointer">
+                        <div
+                            key={index}
+                            className="bg-[#F9F9F9] rounded-xl overflow-hidden flex flex-col h-full border border-gray-100 shadow-sm transition-shadow hover:shadow-md"
+                            data-aos="fade-up"
+                            data-aos-duration="800"
+                            data-aos-delay={index * 150}
+                        >
+                            <div className="relative h-48 w-full cursor-pointer">
                                 <Image
                                     src={video.image}
                                     alt={video.title}
                                     fill
                                     className="object-cover"
                                 />
-                                <div className="absolute inset-0 bg-black/30 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
-                                    <div className="w-12 h-12 bg-[#A8327E] rounded-full flex items-center justify-center">
-                                        <div className="w-0 h-0 border-t-8 border-t-transparent border-l-[12px] border-l-white border-b-8 border-b-transparent ml-1"></div>
-                                    </div>
-                                </div>
                             </div>
-                            <div className="p-6 flex flex-col flex-grow">
-                                <h3 className="font-semibold text-gray-900 mb-2 min-h-[48px] line-clamp-2">
+                            <div className="p-6 flex flex-col flex-grow items-center">
+                                <h3 className="font-semibold text-gray-900 text-lg mb-2 text-left w-full">
                                     {video.title}
                                 </h3>
-                                <p className="text-xs text-gray-500 mb-4 font-medium uppercase tracking-wide">
-                                    {video.author} | {video.date}
+                                <p className="text-xs text-gray-400 mb-4 text-left w-full leading-relaxed">
+                                    {video.date} | Histologics Women's Health | <br className="hidden lg:block lg:mb-1" /> Histologics GX
                                 </p>
-                                <div className="mt-auto">
-                                    <button className="text-[#A8327E] text-sm font-semibold hover:text-[#8a2765] transition-colors flex items-center gap-1 uppercase tracking-wider">
-                                        Watch Video
-                                        <svg className="w-4 h-4 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7" />
-                                        </svg>
+                                <p className="text-sm text-gray-600 mb-6 text-left w-full leading-relaxed flex-grow">
+                                    {video.description}
+                                </p>
+                                <div className="mt-auto w-full flex justify-center">
+                                    <button className="bg-[#A43B7F] text-white px-8 py-2.5 rounded-md text-sm font-medium hover:bg-[#8f326e] transition-colors">
+                                        Read More
                                     </button>
                                 </div>
                             </div>

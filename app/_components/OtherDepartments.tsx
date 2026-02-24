@@ -4,12 +4,12 @@ import Button from "./Button";
 
 export default function OtherDepartments() {
     return (
-        <section className="py-24 bg-[#A8327E]">
+        <section className="py-24 bg-[#A43B7F]">
             <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
-                <h2 className="text-3xl font-light text-white mb-4">
+                <h2 className="text-[27px] font-bold text-white mb-4">
                     Visit Our Other Departments
                 </h2>
-                <p className="text-white opacity-80 mb-12 max-w-xl mx-auto">
+                <p className="text-white opacity-80 mb-12 max-w-3xl mx-auto">
                     Explore our comprehensive range of medical solutions across multiple specialties.
                 </p>
 
@@ -19,7 +19,7 @@ export default function OtherDepartments() {
                             key={index}
                             className="bg-white rounded-xl shadow-xl p-10 flex-1 flex flex-col items-center justify-between transform hover:-translate-y-2 transition-transform duration-300"
                         >
-                            <div className="relative w-48 h-24 mb-6">
+                            <div className="relative w-48 h-48 sm:w-[200px] sm:h-[200px] mb-6">
                                 <Image
                                     src={dept.logo}
                                     alt="Department Logo"
@@ -27,8 +27,8 @@ export default function OtherDepartments() {
                                     className="object-contain"
                                 />
                             </div>
-                            <p className="font-medium text-gray-800 text-center mb-8 max-w-xs h-12 flex items-center justify-center">
-                                {dept.title}
+                            <p className="font-medium text-gray-800 text-center mb-8 max-w-lg min-h-[48px] flex flex-wrap items-center justify-center gap-1 sm:gap-2">
+                                <span>{dept.title}</span> <span className="font-bold text-[#0073CF]">{dept.subtitle} ?</span>
                             </p>
                             <Button href={dept.link} className="w-full sm:w-auto">
                                 Visit Website
