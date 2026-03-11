@@ -3,10 +3,9 @@ import React, { useState } from 'react';
 
 export default function Hero() {
     const bannerVideos = [
-        "https://cdn.clinicalvisuals.com/siteImages/bytech/bytec_01.webm",
-        "https://cdn.clinicalvisuals.com/siteImages/bytech/bytec_02.webm",
-        "https://cdn.clinicalvisuals.com/siteImages/bytech/bytec_03.webm",
-        "https://cdn.clinicalvisuals.com/siteImages/bytech/bytec_04.webm",
+        "https://cdn.clinicalvisuals.com/medical/histologics/landingpage/histologics_01.webm",
+        "https://cdn.clinicalvisuals.com/medical/histologics/landingpage/histologics_02.webm",
+        "https://cdn.clinicalvisuals.com/medical/histologics/landingpage/histologics_03.webm",
     ];
 
     const [currentVideoIndex, setCurrentVideoIndex] = useState(0);

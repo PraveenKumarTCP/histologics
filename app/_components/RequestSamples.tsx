@@ -1,7 +1,22 @@
+"use client";
+
 import Image from "next/image";
+import { useState } from "react";
 import Button from "./Button";
 
 export default function RequestSamples() {
+    const videoClips = [
+        "https://cdn.clinicalvisuals.com/medical/histologics/shortclips/histologics_01.webm",
+        "https://cdn.clinicalvisuals.com/medical/histologics/shortclips/histologics_02.webm",
+        "https://cdn.clinicalvisuals.com/medical/histologics/shortclips/histologics_03.webm",
+    ];
+
+    const [currentVideoIndex, setCurrentVideoIndex] = useState(0);
+
+    const handleVideoEnd = () => {
+        setCurrentVideoIndex((prevIndex) => (prevIndex + 1) % videoClips.length);
+    };
+
     return (
         <section className="py-24 bg-white">
             <div className="container mx-auto px-4 sm:px-6 lg:px-8">
@@ -26,12 +41,15 @@ export default function RequestSamples() {
 
                     {/* Right Image Box */}
                     <div className="w-full md:w-1/2 relative min-h-[300px] md:min-h-[600px] bg-gray-50 flex items-center justify-center border-l border-gray-100" data-aos="fade-left">
-                        <Image
-                            src="/images/home/sample.png"
-                            alt="Three colorful medical devices"
-                            fill
-                            className="object-cover drop-shadow-lg"
-                        />
+                        <video
+                            key={currentVideoIndex}
+                            src={videoClips[currentVideoIndex]}
+                            autoPlay
+                            muted
+                            playsInline
+                            onEnded={handleVideoEnd}
+                            className="absolute inset-0 w-full h-full object-cover z-0"
+                        ></video>
                     </div>
                 </div>
             </div>
