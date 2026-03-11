@@ -43,7 +43,7 @@ export default function MedicalDevices() {
                     loop={true}
                     slideToClickedSlide={true}
                     breakpoints={{
-                        640: { slidesPerView: 2 },
+                        768: { slidesPerView: 2 },
                         1024: { slidesPerView: 3 },
                     }}
                     className="medical-devices-swiper"
@@ -53,9 +53,9 @@ export default function MedicalDevices() {
                         return (
                             <SwiperSlide key={index}>
                                 <div
-                                    className="flex flex-col items-center justify-center p-12 h-[400px] text-center cursor-pointer text-white"
+                                    className="flex flex-col items-center justify-center p-6 md:p-8 lg:p-12 h-[350px] md:h-[400px] text-center cursor-pointer text-white"
                                 >
-                                    <div className="relative w-48 h-48 mb-8 transform -rotate-[30deg]">
+                                    <div className="relative w-40 h-40 md:w-48 md:h-48 mb-6 md:mb-8 transform -rotate-[30deg]">
                                         <Image
                                             src={device.image}
                                             alt={device.title}

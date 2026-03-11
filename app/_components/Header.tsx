@@ -25,14 +25,14 @@ export default function Header() {
 
   return (
     <header className={`z-50 w-full bg-white transition-all duration-300 ${isScrolled ? "fixed top-0 left-0 right-0 shadow-md animate-in slide-in-from-top" : "relative border-b border-gray-200"}`}>
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="container mx-auto px-2 sm:px-3 lg:px-8">
         <div className="flex justify-between items-center h-20">
           <div className="flex-shrink-0 flex items-center">
             <Link href="/" className="text-2xl font-bold text-[#A43B7F]">
-              <Image src="/images/histologics-logo.png" alt="Histologics" width={150} height={150} />
+              <Image src="/images/histologics-logo.png" alt="Histologics" width={150} height={150} className="w-[120px] sm:w-[150px]" />
             </Link>
           </div>
-          <nav className="hidden md:flex space-x-8">
+          <nav className="hidden lg:flex space-x-4 xl:space-x-8">
             {homeData.headerLinks.map((link, index) => (
               <Link
                 key={index}
@@ -43,13 +43,13 @@ export default function Header() {
               </Link>
             ))}
           </nav>
-          <div className="hidden md:flex items-center">
+          <div className="hidden lg:flex items-center">
             <Button href="/contact">
               Contact Us
             </Button>
           </div>
           {/* Mobile menu button */}
-          <div className="md:hidden flex items-center">
+          <div className="lg:hidden flex items-center">
             <button
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
               className="text-gray-700 hover:text-[#A43B7F] focus:outline-none focus:ring-2 focus:ring-inset focus:ring-[#A43B7F] p-2 rounded-md"
@@ -68,7 +68,7 @@ export default function Header() {
 
       {/* Mobile Menu Dropdown */}
       {isMobileMenuOpen && (
-        <div className="md:hidden border-t border-gray-100 bg-white">
+        <div className="lg:hidden border-t border-gray-100 bg-white">
           <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
             {homeData.headerLinks.map((link, index) => (
               <Link
