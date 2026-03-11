@@ -35,10 +35,10 @@ export default function Hero() {
                 className="relative max-w-4xl z-20 container mx-auto text-center text-white"
                 data-aos="fade-up"
             >
-                <h1 className="text-3xl md:text-3xl xl:text-5xl font-bold mb-4 drop-shadow-xl">
+                <h1 className="text-3xl md:text-4xl font-bold mb-4 drop-shadow-xl">
                     Saving Lives Worldwide
                 </h1>
-                <h2 className="text-3xl md:text-3xl xl:text-5xl font-bold drop-shadow-xl">
+                <h2 className="text-3xl md:text-4xl font-bold drop-shadow-xl">
                     with Kylon<sup className="text-2xl md:text-3xl">®</sup> Tissue-Based Devices
                 </h2>
             </div>

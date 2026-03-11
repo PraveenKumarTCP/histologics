@@ -20,9 +20,9 @@ export default function RequestSamples() {
     return (
         <section className="py-24 bg-white">
             <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-                <div className="flex flex-col md:flex-row items-center  overflow-hidden bg-white">
+                <div className="flex flex-col md:gap-16 md:flex-row items-center  overflow-hidden bg-white">
                     {/* Left Text Box */}
-                    <div className="w-full md:w-1/2 p-12 md:p-16 flex flex-col justify-center" data-aos="fade-right">
+                    <div className="w-full md:w-1/2 p-12 md:p-0 flex flex-col justify-center" data-aos="fade-right">
                         <h2 className="text-[27px] font-bold text-[#0073CF] mb-6">
                             Request Product Samples
                         </h2>

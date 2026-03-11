@@ -10,7 +10,10 @@ const manrope = Manrope({
 import { AosInit } from "./_components/AosInit";
 
 export const metadata: Metadata = {
-  title: "Histologics Homepage",
+  icons: {
+    icon: "/images/histologics-logo.png",
+  },
+  title: "Histologics",
   description: "Saving Lives Worldwide with Kylon Tissue-Based Devices",
 };
 
