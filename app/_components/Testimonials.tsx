@@ -10,7 +10,7 @@ export default function Testimonials() {
     return (
         <section className="py-24 bg-gray-50">
             <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-                <div className="text-center mb-16" data-aos="fade-up" data-aos-duration="1000">
+                <div className="text-center mb-16" data-aos="fade-down">
                     <h2 className="text-[27px] font-bold text-[#0073CF] mb-6">
                         Trusted by Healthcare Professionals
                     </h2>
@@ -19,7 +19,7 @@ export default function Testimonials() {
                     </p>
                 </div>
 
-                <div className="w-full relative" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+                <div className="w-full relative" data-aos="fade-up">
                     <style>{`
                         .testimonials-swiper {
                             padding-bottom: 4rem !important;
@@ -70,7 +70,7 @@ export default function Testimonials() {
                             <SwiperSlide key={index} className="h-auto">
                                 <div className="bg-white p-8 rounded-xl shadow-md border border-gray-100 flex flex-col h-full">
                                     <div className="flex items-center mb-6">
-                                        <div className="w-12 h-12 text-black rounded-full flex-shrink-0">
+                                        <div className="w-12 h-12 text-black border border-[#b6aab2] rounded-full flex-shrink-0">
                                             {testimonial.avatar && (
                                                 <img src={testimonial.avatar} alt={testimonial.name} className="w-full h-full object-cover rounded-full" />
                                             )}

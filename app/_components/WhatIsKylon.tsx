@@ -7,7 +7,7 @@ export default function WhatIsKylon() {
             <div className="container mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="flex flex-col lg:grid lg:grid-cols-12 rounded-[10px] overflow-hidden drop-shadow-sm mx-auto">
                     {/* Left Text Box */}
-                    <div className="lg:col-span-7 p-12 md:p-20 lg:p-28 xl:p-32 flex flex-col justify-center bg-[#A43B7F] text-white">
+                    <div className="lg:col-span-7 p-12 md:p-20 lg:p-28 xl:p-32 flex flex-col justify-center bg-[#A43B7F] text-white" data-aos="fade-right">
                         <h2 className="text-3xl md:text-4xl lg:text-[27px] font-bold mb-6">What is Kylon?</h2>
                         <p className="mb-6 text-base md:text-lg font-medium tracking-wide opacity-95">
                             Kylon® — gentle micro-hook fabric for precise debridement and biopsy.
@@ -28,7 +28,7 @@ export default function WhatIsKylon() {
                     </div>
 
                     {/* Right Image Box */}
-                    <div className="lg:col-span-5 bg-[#f4f4f4] flex items-center justify-center min-h-[300px] md:min-h-[400px] lg:min-h-[700px]">
+                    <div className="lg:col-span-5 bg-[#f4f4f4] flex items-center justify-center min-h-[300px] md:min-h-[400px] lg:min-h-[700px]" data-aos="fade-left">
                         <div className="relative w-full h-[300px] md:h-[400px] lg:h-[500px]">
                             <Image
                                 src="/images/kylon.png"

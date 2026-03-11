@@ -7,7 +7,7 @@ export default function RequestSamples() {
             <div className="container mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="flex flex-col md:flex-row items-center  overflow-hidden bg-white">
                     {/* Left Text Box */}
-                    <div className="w-full md:w-1/2 p-12 md:p-16 flex flex-col justify-center">
+                    <div className="w-full md:w-1/2 p-12 md:p-16 flex flex-col justify-center" data-aos="fade-right">
                         <h2 className="text-[27px] font-bold text-[#0073CF] mb-6">
                             Request Product Samples
                         </h2>
@@ -25,7 +25,7 @@ export default function RequestSamples() {
                     </div>
 
                     {/* Right Image Box */}
-                    <div className="w-full md:w-1/2 relative min-h-[300px] md:min-h-[600px] bg-gray-50 flex items-center justify-center border-l border-gray-100">
+                    <div className="w-full md:w-1/2 relative min-h-[300px] md:min-h-[600px] bg-gray-50 flex items-center justify-center border-l border-gray-100" data-aos="fade-left">
                         <Image
                             src="/images/home/sample.png"
                             alt="Three colorful medical devices"

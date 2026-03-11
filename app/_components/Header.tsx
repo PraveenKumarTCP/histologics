@@ -1,16 +1,30 @@
 "use client";
 
 import Link from "next/link";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import homeData from "../_data/homeData.json";
 import Image from "next/image";
 import Button from "./Button";
 
 export default function Header() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 120) {
+        setIsScrolled(true);
+      } else {
+        setIsScrolled(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   return (
-    <header className="sticky top-0 z-50 w-full bg-white border-b border-gray-200" data-aos="fade-down" data-aos-duration="1000">
+    <header className={`z-50 w-full bg-white transition-all duration-300 ${isScrolled ? "fixed top-0 left-0 right-0 shadow-md animate-in slide-in-from-top" : "relative border-b border-gray-200"}`}>
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-20">
           <div className="flex-shrink-0 flex items-center">

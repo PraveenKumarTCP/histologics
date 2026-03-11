@@ -3,10 +3,10 @@ import React, { useState } from 'react';
 
 export default function Hero() {
     const bannerVideos = [
-        "https://cdn.clinicalvisuals.com/medical/kap/landingpage/001.webm",
-        "https://cdn.clinicalvisuals.com/medical/kap/landingpage/002.webm",
-        "https://cdn.clinicalvisuals.com/medical/kap/landingpage/003.webm",
-        "https://cdn.clinicalvisuals.com/medical/kap/landingpage/004.webm",
+        "https://cdn.clinicalvisuals.com/siteImages/bytech/bytec_01.webm",
+        "https://cdn.clinicalvisuals.com/siteImages/bytech/bytec_02.webm",
+        "https://cdn.clinicalvisuals.com/siteImages/bytech/bytec_03.webm",
+        "https://cdn.clinicalvisuals.com/siteImages/bytech/bytec_04.webm",
     ];
 
     const [currentVideoIndex, setCurrentVideoIndex] = useState(0);
@@ -16,7 +16,7 @@ export default function Hero() {
     };
 
     return (
-        <section className="relative w-full h-[calc(100vh-81px)] flex justify-center items-end pb-24 overflow-hidden">
+        <section className="relative w-full h-screen flex justify-center items-end pb-24 overflow-hidden">
             {/* Background Video Layer */}
             <div className="absolute inset-0 z-0">
                 <video
@@ -32,11 +32,14 @@ export default function Hero() {
 
             {/* <div className="absolute inset-0 bg-black/60 z-10"></div> */}
 
-            <div className="relative max-w-2xl z-20 container mx-auto px-4 py-12 text-center text-white linear-to-b rounded-3xl from-black/7 to-black/8 backdrop-blur-xl" data-aos="fade-up" data-aos-duration="1000">
-                <h1 className="text-3xl md:text-4xl font-light mb-4 drop-shadow-lg">
+            <div
+                className="relative max-w-4xl z-20 container mx-auto text-center text-white"
+                data-aos="fade-up"
+            >
+                <h1 className="text-3xl md:text-5xl font-bold mb-4 drop-shadow-xl">
                     Saving Lives Worldwide
                 </h1>
-                <h2 className="text-3xl md:text-4xl font-medium drop-shadow-lg">
+                <h2 className="text-3xl md:text-5xl font-bold drop-shadow-xl">
                     with Kylon<sup className="text-2xl md:text-3xl">®</sup> Tissue-Based Devices
                 </h2>
             </div>

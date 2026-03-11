@@ -10,7 +10,7 @@ export default function Footer() {
             <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-[1400px]">
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 mb-12">
                     {/* Column 1: Logo & Search */}
-                    <div className="lg:col-span-1 flex flex-col justify-start" data-aos="fade-up" data-aos-duration="800">
+                    <div className="lg:col-span-1 flex flex-col justify-start" data-aos="fade-up" data-aos-delay="0">
                         <Link href="/" className="mb-8 inline-block">
                             <Image
                                 src="/images/histologics-logo.png"
@@ -35,7 +35,7 @@ export default function Footer() {
                     </div>
 
                     {/* Column 2: About */}
-                    <div className="flex flex-col gap-3" data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">
+                    <div className="flex flex-col gap-3" data-aos="fade-up" data-aos-delay="100">
                         <h4 className="text-[15px] font-semibold mb-3 text-white">About</h4>
                         {about.map((link, idx) => (
                             <Link key={idx} href={link.href} className="text-[13px] text-text-white transition-colors">
@@ -45,7 +45,7 @@ export default function Footer() {
                     </div>
 
                     {/* Column 3: Marketing */}
-                    <div className="flex flex-col gap-3" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
+                    <div className="flex flex-col gap-3" data-aos="fade-up" data-aos-delay="200">
                         <h4 className="text-[15px] font-semibold mb-3 text-white">Marketing</h4>
                         {marketing.map((link, idx) => (
                             <Link key={idx} href={link.href} className="text-[13px] text-text-white transition-colors">
@@ -55,7 +55,7 @@ export default function Footer() {
                     </div>
 
                     {/* Column 4: Quick Links */}
-                    <div className="flex flex-col gap-3" data-aos="fade-up" data-aos-duration="800" data-aos-delay="300">
+                    <div className="flex flex-col gap-3" data-aos="fade-up" data-aos-delay="300">
                         <h4 className="text-[15px] font-semibold mb-3 text-white">Quick Links</h4>
                         {quickLinks.map((link, idx) => (
                             <Link key={idx} href={link.href} className="text-[13px] text-text-white hover:text-white transition-colors">
@@ -65,7 +65,7 @@ export default function Footer() {
                     </div>
 
                     {/* Column 5: Contacts */}
-                    <div className="flex flex-col gap-4" data-aos="fade-up" data-aos-duration="800" data-aos-delay="400">
+                    <div className="flex flex-col gap-4" data-aos="fade-up" data-aos-delay="400">
                         <h4 className="text-[15px] font-semibold mb-2 text-white">Contacts</h4>
                         <div className="flex items-start gap-3 text-[13px] text-text-white">
                             <svg className="w-5 h-5 flex-shrink-0 text-white mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">

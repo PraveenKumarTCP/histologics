@@ -8,7 +8,7 @@ export default function About() {
                 <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-16">
 
                     {/* Left Image Side */}
-                    <div className="w-full lg:w-1/2 flex justify-center lg:justify-start">
+                    <div className="w-full lg:w-1/2 flex justify-center lg:justify-start" data-aos="fade-right">
                         <div className="relative w-full max-w-xl mb-8 lg:mb-0">
                             {/* Purple Background offset */}
                             <div className="absolute top-[10%] left-[15%] w-[95%] h-[100%] bg-[#A43B7F] rounded-2xl z-0">
@@ -33,7 +33,7 @@ export default function About() {
                     </div>
 
                     {/* Right Text Side */}
-                    <div className="w-full lg:w-1/2 flex flex-col justify-center">
+                    <div className="w-full lg:w-1/2 flex flex-col justify-center" data-aos="fade-left">
                         <h2 className="text-2xl md:text-[27px] font-bold text-[#0073CF] mb-6">
                             About Histologics LLC
                         </h2>

@@ -5,7 +5,7 @@ export default function Videos() {
     return (
         <section className="py-24 bg-white">
             <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-                <div className="text-center mb-16" data-aos="fade-up" data-aos-duration="800">
+                <div className="text-center mb-16" data-aos="fade-down">
                     <h2 className="text-2xl md:text-[27px] font-bold text-[#0073CF] mb-6">
                         Recent Articles & Insights
                     </h2>
@@ -18,10 +18,9 @@ export default function Videos() {
                     {homeData.videos.map((video, index) => (
                         <div
                             key={index}
-                            className="bg-[#F9F9F9] rounded-xl overflow-hidden flex flex-col h-full border border-gray-100 shadow-sm transition-shadow hover:shadow-md"
                             data-aos="fade-up"
-                            data-aos-duration="800"
-                            data-aos-delay={index * 150}
+                            data-aos-delay={index * 100}
+                            className="bg-[#F9F9F9] rounded-xl overflow-hidden flex flex-col h-full border border-gray-100 shadow-sm transition-shadow hover:shadow-md"
                         >
                             <div className="relative h-48 w-full cursor-pointer">
                                 <Image
@@ -32,17 +31,17 @@ export default function Videos() {
                                 />
                             </div>
                             <div className="p-6 flex flex-col flex-grow items-center">
-                                <h3 className="font-semibold text-gray-900 text-lg mb-2 text-left w-full">
+                                <h3 className="font-semibold text-gray-900 text-lg mb-2 text-left w-full line-clamp-1">
                                     {video.title}
                                 </h3>
-                                <p className="text-xs text-gray-400 mb-4 text-left w-full leading-relaxed">
+                                <p className="text-xs! text-gray-400 mb-4 text-left w-full leading-relaxed">
                                     {video.date} | Histologics Women's Health | <br className="hidden lg:block lg:mb-1" /> Histologics GX
                                 </p>
-                                <p className="text-sm! text-gray-600 mb-6 text-left w-full leading-relaxed flex-grow">
+                                <p className="text-sm! text-gray-600 mb-6 text-left w-full leading-relaxed flex-grow line-clamp-2">
                                     {video.description}
                                 </p>
                                 <div className="mt-auto w-full flex justify-center">
-                                    <button className="bg-[#A43B7F] text-white px-8 py-2.5 rounded-md text-sm font-medium hover:bg-[#8f326e] transition-colors">
+                                    <button className="bg-[#A43B7F] text-white px-8 py-2.5 rounded-md text-sm font-medium hover:bg-[#8f326e] transition-colors cursor-pointer">
                                         Read More
                                     </button>
                                 </div>

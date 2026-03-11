@@ -11,7 +11,7 @@ export default function MedicalDevices() {
 
     return (
         <section className="py-20">
-            <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center mb-12" data-aos="fade-up" data-aos-duration="1000">
+            <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center mb-12" data-aos="fade-down">
                 <h2 className="text-2xl md:text-[27px] font-bold text-[#0073CF] mb-6">
                     Our Medical Devices
                 </h2>
@@ -20,7 +20,7 @@ export default function MedicalDevices() {
                 </p>
             </div>
 
-            <div className="w-full relative group" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+            <div className="w-full relative group" data-aos="fade-up">
                 <style>{`
                     .medical-devices-swiper .swiper-slide > div {
                         opacity: 0.4;

@@ -5,7 +5,7 @@ import Button from "./Button";
 export default function OtherDepartments() {
     return (
         <section className="py-24 bg-[#A43B7F]">
-            <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center" data-aos="fade-down">
                 <h2 className="text-[27px] font-bold text-white mb-4">
                     Visit Our Other Departments
                 </h2>
@@ -17,6 +17,8 @@ export default function OtherDepartments() {
                     {homeData.departments.map((dept, index) => (
                         <div
                             key={index}
+                            data-aos="fade-up"
+                            data-aos-delay={index * 100}
                             className="bg-white rounded-xl shadow-xl p-10 flex-1 flex flex-col items-center justify-between transform hover:-translate-y-2 transition-transform duration-300"
                         >
                             <div className="relative w-48 h-48 sm:w-[200px] sm:h-[200px] mb-6">

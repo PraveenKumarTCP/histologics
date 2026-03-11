@@ -7,12 +7,12 @@ const manrope = Manrope({
   subsets: ["latin"],
 });
 
+import { AosInit } from "./_components/AosInit";
+
 export const metadata: Metadata = {
   title: "Histologics Homepage",
   description: "Saving Lives Worldwide with Kylon Tissue-Based Devices",
 };
-
-import { AOSInit } from "./_components/AOSInit";
 
 export default function RootLayout({
   children,
@@ -22,7 +22,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${manrope.variable} font-sans antialiased`}>
-        <AOSInit />
+        <AosInit />
         {children}
       </body>
     </html>
