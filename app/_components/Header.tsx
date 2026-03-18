@@ -27,9 +27,9 @@ export default function Header() {
     <header className={`z-50 w-full bg-white transition-all duration-300 ${isScrolled ? "fixed top-0 left-0 right-0 shadow-md animate-in slide-in-from-top" : "relative border-b border-gray-200"}`}>
       <div className="container mx-auto px-2 sm:px-3 lg:px-8">
         <div className="flex justify-between items-center h-20">
-          <div className="flex-shrink-0 flex items-center">
+          <div className="shrink-0 flex items-center">
             <Link href="/" className="text-2xl font-bold text-[#A43B7F]">
-              <Image src="/images/histologics-logo.png" alt="Histologics" width={150} height={150} className="w-[120px] sm:w-[150px]" />
+              <Image src="/images/histologics.png" alt="Histologics" width={100} height={100} className="w-17.5" />
             </Link>
           </div>
           <nav className="hidden lg:flex space-x-4 xl:space-x-8">
